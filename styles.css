@@ -1,0 +1,350 @@
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+        }
+
+        /* Color Variables */
+        :root {
+            --primary-color: #d71e55; /* Main Pink from buttons/logo */
+            --secondary-color: #3a505a; /* Dark Teal from header */
+            --accent-pink-bg: #e85a86; /* Lighter pink for section background */
+            --dark-text: #333333;
+            --light-text: #ffffff;
+            --muted-text: #6c757d;
+        }
+
+        /* Header */
+        .header-top {
+            background-color: var(--secondary-color);
+        }
+
+        .logo-initials {
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--light-text);
+            border: 2px solid var(--light-text);
+            padding: 0 8px;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--light-text);
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--light-text);
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #c21b4d;
+            border-color: #c21b4d;
+            color: var(--light-text);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-initials-large {
+            font-weight: 700;
+            font-size: 4rem;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+
+        .logo-text {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #a0a0a0;
+            letter-spacing: 1px;
+            margin-left: 10px;
+            align-self: flex-end;
+            padding-bottom: 10px;
+        }
+
+        .hero-subtext {
+            color: #555;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .hero-title {
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-top: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 1.5rem;
+        }
+
+        .btn-secondary-custom {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--light-text);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-secondary-custom:hover {
+            background-color: #2f414a;
+            border-color: #2f414a;
+            color: var(--light-text);
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+        }
+
+        /* Featured Section */
+        .featured-section {
+            background-color: #f8f9fa;
+        }
+
+        .featured-section img {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            max-height: 30px;
+            width: auto;
+        }
+
+        /* Challenges Section */
+        .challenges-section .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .challenge-card {
+            padding: 2rem;
+        }
+
+        .challenge-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            min-height: 80px; /* To align titles */
+        }
+
+        .challenge-card ul {
+            margin-top: 1.5rem;
+            color: #555;
+        }
+
+        .challenge-card li {
+            margin-bottom: 0.75rem;
+            display: flex;
+        }
+
+        .challenge-card .bullet {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Coaching & Development Sections */
+        .coaching-section {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+        }
+
+        .leadership-dev-section {
+            background-color: var(--accent-pink-bg);
+            color: var(--light-text);
+        }
+
+        .sub-heading {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .section-title-light {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--light-text);
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-text-light {
+            color: var(--light-text);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 1.5rem 0;
+            border-bottom: 2px solid var(--light-text);
+            padding-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .feature-list {
+            margin-top: 2rem;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .leadership-dev-section .feature-list li::before {
+            color: var(--light-text);
+        }
+
+        .btn-light-outline-custom {
+            border: 2px solid var(--light-text);
+            color: var(--light-text);
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-light-outline-custom:hover {
+            background-color: var(--light-text);
+            color: var(--secondary-color);
+        }
+
+        .leadership-dev-section .btn-light-outline-custom:hover {
+            color: var(--accent-pink-bg);
+        }
+
+        /* HR Transformation Section */
+        .hr-transformation-section {
+            background-color: #fff;
+            padding: 6rem 0;
+        }
+
+        .sub-heading-dark {
+            color: #888;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .section-title-dark {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark-text);
+        }
+
+        .highlight-text-pink {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 1.5rem 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .feature-list-dark {
+             margin-top: 1rem;
+             list-style: none;
+        }
+
+        .feature-list-dark li {
+            margin-bottom: 0.75rem;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+
+        .feature-list-dark li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .hero-section, .coaching-section, .hr-transformation-section, .leadership-dev-section {
+                text-align: center;
+            }
+            .hero-logo, .row {
+                justify-content: center;
+            }
+            .feature-list li, .feature-list-dark li {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-title, .section-title-light, .section-title-dark {
+                font-size: 2.2rem;
+            }
+            .challenges-section .section-title {
+                font-size: 2rem;
+            }
+            .challenge-card {
+                margin-bottom: 2rem;
+            }
+          }
